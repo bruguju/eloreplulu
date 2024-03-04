@@ -1,25 +1,69 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
-    <script src="components/loader.js"></script>
-    <link rel="stylesheet" href="components/loader.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script>
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acessibilidade: Um Mundo para Todos</title>
+  <link rel="stylesheet" href="cssteste.css">
 </head>
-<body onload="carrega_caraio()">
+<body>
 
-   <h1> eloeleol</h1>
+  <header>
+    <div class="container">
+      <h1>Acessibilidade: Um Mundo para Todos</h1>
+      <nav>
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-<br>
-    <script>
-        function carrega_caraio() {
-        alert('cala a boca rafa');
-        }
+  
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
 
-    </script>
+  <main>
+    <div class="container">
+      <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>O nosso objetivo é promover a acessibilidade digital e física para todas as pessoas, garantindo que ninguém seja deixado para trás. Oferecemos consultoria, treinamentos e recursos para ajudar organizações a tornar seus produtos e serviços acessíveis a todos.</p>
+      </section>
+
+      <section id="servicos">
+        <h2>Nossos Serviços</h2>
+        <ul>
+          <li>Consultoria em Design Acessível</li>
+          <li>Avaliação de Acessibilidade em Websites e Aplicações</li>
+          <li>Desenvolvimento de Websites e Aplicações Acessíveis</li>
+          <li>Workshops e Treinamentos em Acessibilidade</li>
+        </ul>
+      </section>
+
+      <section id="contato">
+        <h2>Entre em Contato</h2>
+        <p>Estamos aqui para ajudar. Entre em contato conosco para mais informações sobre nossos serviços ou para discutir como podemos colaborar para tornar o seu projeto acessível.</p>
+        <br>
+        <a href="mailto:contato@acessibilidadetodos.com" class="button">Enviar Email</a>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Acessibilidade: Um Mundo para Todos. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
 </body>
 </html>
